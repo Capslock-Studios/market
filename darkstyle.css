@@ -201,13 +201,6 @@ button:hover::after {
 	width: 100%;
 padding: 7px;
 }
-
-.navdiv {
-	justify-content: space-around;
-	border-radius: 22px;
-	}
-
-
 .navbar i {
     color: white !important; /* Ensures all icons in navbar are white */
     font-size: 20px; /* Adjust size if needed */
