@@ -126,10 +126,10 @@ body{
 	bottom: 0;
 	display: flex;
 	justify-content: space-around;
-	margin-bottom: 0x;
+	margin-bottom: 0;
 	z-index: 50;
 	width: 100%;
-padding: 5px;
+padding: 7px;
 }
 
 .navdiv {
