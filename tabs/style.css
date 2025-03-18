@@ -18,7 +18,7 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	background-color: #ECF0F3;
+	
 }
 
 body{
@@ -27,25 +27,35 @@ body{
 	height: 100vh;
 	width: 100vw;
 	margin: 0;
+	background-color: #0c65aa;
 }
 
 .loader {
     align-items: center !important;
     justify-content: center !important;
-    height: 100px !important; /* Full screen height */
+    height: 100% !important; /* Full screen height */
     text-align: center !important;
-    background-color: #000 !important; /* Adjust as needed */
-    color: white !important;
-	
+    background-color: #ECF0F3 !important; /* Adjust as needed */
+    color: rgb(27, 27, 27) !important;
+	z-index: 9999;
 }
 
 
 .loader-image {
-    width: 200px; /* Adjust size as needed */
+    width: 100px; /* Adjust size as needed */
     height: auto;
     margin-bottom: 20px;
 }
 
+
+.card-div {
+	height: 150px; 
+	width: 100%; 
+	background-color: red; 
+	padding: 5px;
+	margin: 5px;
+	border-radius: 18px;
+}
 .slogan {
     font-size: 18px;
     font-weight: bold;
@@ -73,6 +83,8 @@ body{
 	overflow-y: hidden;
  	scroll-behavior: smooth;
   	-webkit-overflow-scrolling: touch;
+	background-color: #6900FF;
+	border-radius: 50px;
 }
 
 .content-wrapper a{
@@ -80,18 +92,19 @@ body{
 	right: 0;
 	top: 0;
 	margin: 30px 30px 0px 0px;
-	z-index: 1000;
+	z-index: 100;
 	color: black;
 	text-decoration: none;
+	background-color: #d9e70d;
 }
 
 
 .a {
 	position: fixed;
-	top: 7%;
+	top: 10%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	z-index: 1000;
+	z-index: 100;
 	color: black;
 	text-decoration: none;
   }
@@ -117,6 +130,7 @@ body{
 	top: 0;
 	left: 0;
 	margin: 15px 0px 0px 15px;
+	background-color: #1eb337;
 }
 
 .topnavbar h2{
@@ -128,10 +142,16 @@ body{
 	bottom: 0;
 	display: flex;
 	justify-content: space-around;
-	margin-bottom: 20px;
+	margin-bottom: 0px;
 	z-index: 50;
-	border: 1px solid #000 ;
+	background-color: #ECF0F3;
 	border-radius: 22px;
+	padding-top: 20px;
+}
+
+.navbar i {
+    color: black !important; /* Ensures all icons in navbar are white */
+	text-decoration: none;
 }
 
 .navbar button{
@@ -324,7 +344,7 @@ body{
 	display: flex;
 	justify-content: start;
 	align-items: center;
-	flex-direction: column-reverse;
+	flex-direction: column;
 	width: 300px;
 	height: 90px;
 }
@@ -437,7 +457,7 @@ body{
   	-webkit-overflow-scrolling: touch;
 	border: solid 1px #b8b8b8 ;
 	box-shadow: inset 3px 3px 3px #cbced1, inset -3px -3px 3px white;
-	background-color: none;
+	background-color: #ECF0F3 !important; /* Adjust as needed */
 }
 
   .rival-boxes img {
@@ -617,7 +637,7 @@ body{
 			  max-width: 220px;
 	}
 	.navbar{
-		max-width: 80%;
+		max-width: 100%;
 	}
 	.navbar button{
 		margin: 0px 10px 0px 10px;
@@ -628,7 +648,7 @@ body{
 			  max-width: 200px;
 	}
 	.navbar{
-		max-width: 80%;
+		max-width: 100%;
 	}
 	.navbar button{
 		margin: 0px 10px 0px 10px;
@@ -639,7 +659,7 @@ body{
 			  max-width: 350px;
 	}
 	.navbar{
-		max-width: 80%;
+		max-width: 100%;
 	}
 
 	.navbar button{

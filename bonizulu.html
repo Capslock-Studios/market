@@ -10,58 +10,31 @@
 		<div class="container">
 			
 			<div class="loader"><h1>boniZulu Monitor</h1></div>
-			<style>
-				button {
-    position: relative;
-}
-
-button:hover::after {
-    content: attr(data-tooltip);
-    position: absolute;
-    background: black;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 12px;
-    white-space: nowrap;
-    bottom: 120%;
-    left: 50%;
-    transform: translateX(-50%);
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-    pointer-events: none;
-}
-
-button:hover::after {
-    opacity: 1;
-}
-
-			</style>
+			
 			<div class="navbar">
-				<a id="swhref" href="#internet"><button data-tooltip="Info from the internet" title="Search with Google"><i class="fab fa-google"></i></button></a>
-				<a id="chref" href="#clock"><button data-tooltip="What they sell" title="Shopping Cart"><i class="fas fa-shopping-cart"></i></button></a>
+				<a id="swhref" data-tooltip="Info from the internet" href="#stopwatch"><button data-tooltip="Info from the internet"><i class="fab fa-google"></i></button></a>
+				<a id="chref" data-tooltip="What they sell" href="#clock"><button data-tooltip="What they sell"><i class="fas fa-shopping-cart"></i></button></a>
 				<a id="thref" href="#timer"><button data-tooltip="What they post" title="Social Media"><i class="fas fa-users"></i></button></a>
-				<a id="thref" href="#social"><button data-tooltip="talk to them" title="Messages"><i class="fab fa-comment-alt"></i></button></a>
+				<a id="thref" href="#social"><button data-tooltip="talk to them" title="Messages"><i class="fas fa-comment-alt"></i></button></a>
 
 			</div>
 			
+
 			<div class="content-wrapper">
 				
 		    	<div  class="a">
 					<div class="rival-boxes">
-						<button class="rival-boxes" onclick="window.location.href='zara.html'">
-							<img src="Img/zara.webp" alt="BZ Image">
-						  </button>
-						  
-						  <button onclick="window.location.href='tabs/psa.html'"><img src="Img/psa.png" alt="proudly"></button>
-						  <button onclick="window.location.href='tabs/gnu.html'"><img src="Img/gnu.png" alt="Government of NU"></button>
-						  <button onclick="window.location.href='tabs/jmj.html'"><img src="Img/JmJ.png" alt="BZ Image"></button>
-						  <button onclick="window.location.href='tabs/1pulse.html'"><img src="Img/1pulse online logo CRcL2.png" alt="BZ Image"></button>
-						  <button onclick="window.location.href='tabs/ishimologong.html'"><img src="Img/Tshimologong.png" alt="BZ Image"></button>
-						  <button onclick="window.location.href='tabs/sagov.html'"><img src="Img/gov.png" alt="BZ Image"></button>
-						  <button onclick="window.location.href='tabs/bonizulu.html'"><img src="Img/bonizulu-logo-dark.webp" alt="BZ Image"></button>
-							
-				</div>
+						<button class="rival-boxes" onclick="window.location.href='#internet'">
+						<img src="Img/whatsnext.png" alt="BZ Image">
+					  </button>
+					  <button onclick="window.location.href='tabs/psa.html'"><img src="Img/psa.png" alt="proudly"></button>
+					  <button onclick="window.location.href='tabs/gnu.html'"><img src="Img/gnu.png" alt="Government of NU"></button>
+					  <button onclick="window.location.href='tabs/jmj.html'"><img src="Img/JmJ.png" alt="BZ Image"></button>
+					  <button onclick="window.location.href='tabs/1pulse.html'"><img src="Img/1pulse online logo CRcL2.png" alt="BZ Image"></button>
+					  <button onclick="window.location.href='tabs/ishimologong.html'"><img src="Img/Tshimologong.png" alt="BZ Image"></button>
+					  <button onclick="window.location.href='tabs/sagov.html'"><img src="Img/gov.png" alt="BZ Image"></button>
+					  <button onclick="window.location.href='tabs/bonizulu.html'"><img src="Img/bonizulu-logo-dark.webp" alt="BZ Image"></button>
+						</div>
 			</div>
 				
 				<div class="stopw-section" id="stopwatch">
