@@ -112,6 +112,11 @@ body{
 	justify-content: center;
 }
 
+
+.navbar i {
+	text-decoration: none;
+}
+
 .topnavbar{
 	position: absolute;
 	top: 0;

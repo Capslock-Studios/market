@@ -141,6 +141,7 @@ padding: 7px;
 .navbar i {
     color: white !important; /* Ensures all icons in navbar are white */
     font-size: 20px; /* Adjust size if needed */
+	text-decoration: none;
 }
 
 .navbar button{
