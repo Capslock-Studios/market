@@ -628,7 +628,7 @@ body{
 			  max-width: 220px;
 	}
 	.navbar{
-		max-width: 80%;
+		max-width: 90%;
 	}
 	.navdiv {
 		justify-content: space-around;
@@ -643,7 +643,7 @@ body{
 			  max-width: 200px;
 	}
 	.navbar{
-		max-width: 80%;
+		max-width: 90%;
 	}
 
 	.navdiv {
@@ -662,7 +662,7 @@ body{
 			  max-width: 350px;
 	}
 	.navbar{
-		max-width: 80%;
+		max-width: 90%;
 	}
 	.navdiv {
 		justify-content: space-around;
