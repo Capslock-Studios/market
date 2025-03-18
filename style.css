@@ -39,6 +39,14 @@ body{
 	
 }
 
+.edit {
+						width: 120px;
+						height: 60px;
+						border-radius: 10px;
+						font-weight: bold;
+						font-size: 1.1em;
+						margin: 20px;
+}
 
 .loader-image {
     width: 200px; /* Adjust size as needed */

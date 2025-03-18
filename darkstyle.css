@@ -43,7 +43,14 @@ body{
     height: auto;
     margin-bottom: 20px;
 }
-
+.edit {
+	width: 120px;
+						height: 60px;
+						border-radius: 10px;
+						font-weight: bold;
+						font-size: 1.1em;
+						margin: 20px;
+}
 .slogan {
     font-size: 18px;
     font-weight: bold;
@@ -154,6 +161,7 @@ padding: 7px;
 
 .navbar button:hover{
 	box-shadow: inset 3px 3px 3px #303030, inset -5px -5px 5px rgb(34, 34, 34);
+
 }
 
 /* Bagian Jam*/
