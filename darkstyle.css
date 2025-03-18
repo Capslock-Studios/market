@@ -28,6 +28,27 @@ body{
 	width: 100vw;
 	margin: 0;
 }
+.loader {
+    align-items: center !important;
+    justify-content: center !important;
+    height: 100px; /* Full screen height */
+    text-align: center !important;
+    background-color: #000 !important; /* Adjust as needed */
+    color: white !important;
+	background-color: #0065BD !important;
+}
+
+.loader-image {
+    width: 200px; /* Adjust size as needed */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.slogan {
+    font-size: 18px;
+    font-weight: bold;
+    color: #f3f3f3; /* Adjust to match theme */
+}
 
 .container{
 	height: 100%;
