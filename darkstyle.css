@@ -132,9 +132,9 @@ body{
 }
 
 .navdiv {
-width: 30%;
-justify-content: space-around;
-}
+	justify-content: space-around;
+	border-radius: 22px;
+	}
 
 
 .navbar i {
@@ -630,6 +630,10 @@ justify-content: space-around;
 	.navbar{
 		max-width: 80%;
 	}
+	.navdiv {
+		justify-content: space-around;
+		}
+		
 	.navbar button{
 		margin: 0px 10px 0px 10px;
   }
@@ -641,9 +645,17 @@ justify-content: space-around;
 	.navbar{
 		max-width: 80%;
 	}
+
+	.navdiv {
+		justify-content: space-around;
+		}
 	.navbar button{
 		margin: 0px 10px 0px 10px;
   }
+
+  .navdiv {
+	justify-content: space-around;
+	}
 }
   @media only screen and (max-width: 400px) {
 	.rival-boxes {
@@ -652,8 +664,15 @@ justify-content: space-around;
 	.navbar{
 		max-width: 80%;
 	}
+	.navdiv {
+		justify-content: space-around;
+		}
 
 	.navbar button{
 		margin: 0px 10px 0px 10px;
 	}
+
+	.navdiv {
+		justify-content: space-around;
+		}
   }
