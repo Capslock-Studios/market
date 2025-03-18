@@ -2,21 +2,76 @@
 <html>
 	<head>
    	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="style.css"/>
+		   <script>
+			function setTheme() {
+				// Check if the user's system prefers dark mode
+				const prefersDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
+		
+				// Create a link element for the stylesheet
+				const link = document.createElement("link");
+				link.rel = "stylesheet";
+				link.id = "theme-style";
+		
+				// Apply the appropriate stylesheet
+				link.href = prefersDarkMode ? "darkstyle.css" : "style.css";
+		
+				// Append the link to the head
+				document.head.appendChild(link);
+			}
+		
+			// Run the function on page load
+			setTheme();
+		</script>
+		
 		<title>Progress Watcher by Siya Percy</title>
 	</head>
-	
+	<script>
+    function setTheme() {
+        // Check if the user's system prefers dark mode
+        const prefersDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+        // Create a link element for the stylesheet
+        const link = document.createElement("link");
+        link.rel = "stylesheet";
+        link.id = "theme-style";
+
+        // Apply the appropriate stylesheet
+        link.href = prefersDarkMode ? "darkstyle.css" : "styles.css";
+
+        // Append the link to the head
+        document.head.appendChild(link);
+    }
+
+    // Run the function on page load
+    setTheme();
+</script>
+
 	<body>
 		<div class="container">
 			
 			<div class="loader"><h1>WhatsNext</h1></div>
 			
-			<div class="navbar">
-				<a id="swhref" href="#stopwatch"><button><i class="fab fa-google"></i></button></a>
+		<!--	<div class="navbar">
+				<a id="swhref" href="#stopwatch"><button><i  class="fab fa-google"></i></button></a>
 				<a id="chref" href="#clock"><button><i class="fas fa-map-marker-alt"></i></button></a>
 				<a id="thref" href="#timer"><button><i class="fas fa-users"></i></button></a>
 				<a id="thref" href="#social"><button><i class="fab fa-instagram"></i></button></a>
-
+>-->
+				<div class="navbar">
+					<a id="swhref" href="#stopwatch">
+						<button><i class="fab fa-google"></i></button>  <!-- Google Icon -->
+					</a>
+					<a id="chref" href="#shopping">
+						<button><i class="fas fa-shopping-cart"></i></button>  <!-- Shopping Cart Icon -->
+					</a>
+					<a id="thref" href="#social">
+						<button><i class="fas fa-users"></i></button>  <!-- Social Media Icon -->
+					</a>
+					<a id="mhref" href="#messages">
+						<button><i class="fas fa-comment-alt"></i></button>  <!-- Message Icon -->
+					</a>
+				</div>
+				
 			</div>
 			
 			<div class="content-wrapper">
@@ -28,9 +83,9 @@
 						  </button>
 						  <button onclick="window.location.href='tabs/ipikoko.html'"><img src="Img/psa.png" alt="BZ Image"></button>
 						  <button onclick="window.location.href='tabs/localbrands.html'"><img src="Img/gnu.png" alt="BZ Image"></button>
-						  <button onclick="window.location.href='tabs/bonizulu.html'"><img src="Img/Tshimologong.png" alt="BZ Image"></button>
-						  <button onclick="window.location.href='tabs/woolworths.html'"><img src="Img/1pulse online logo CRcL2.png" alt="BZ Image"></button>
 						  <button onclick="window.location.href='tabs/meandb.html'"><img src="Img/JmJ.png" alt="BZ Image"></button>
+						  <button onclick="window.location.href='tabs/woolworths.html'"><img src="Img/1pulse online logo CRcL2.png" alt="BZ Image"></button>
+						  <button onclick="window.location.href='tabs/bonizulu.html'"><img src="Img/Tshimologong.png" alt="BZ Image"></button>
 						  <button onclick="window.location.href='tabs/bonizulu.html'"><img src="Img/bonizulu-logo-dark.webp" alt="BZ Image"></button>
 						  <button onclick="window.location.href='tabs/skinny.html'"><img src="Img/skinny sbu.png" alt="BZ Image"></button>
 						  <button onclick="window.location.href='tabs/tshepo.html'"><img src="Img/tshepo jeans.png" alt="BZ Image"></button>
@@ -62,8 +117,7 @@
 						border-radius: 10px;
 						font-weight: bold;
 						font-size: 1.1em;
-						margin: 20px;
-						border: 1px solid #F3F3F3; background: #ECF0F3; box-shadow: 8px 8px 16px #c3c3c3, -5px -5px 5px #ffffff;">edit</Button>
+						margin: 20px;">edit</Button>
 						
 						<p>Proudly South African, founded in 2001 after the 1998 Presidential Job Summit led by Nelson Mandela, is the country’s official buy-local campaign aimed at tackling poverty, inequality, and unemployment.</p>
 						<h2>Posts from Proudly South African</h2>
