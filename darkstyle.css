@@ -121,14 +121,21 @@ body{
 	font-weight: bold;
 }
 
-.navbar{
+.navbar {
 	position: fixed;
 	bottom: 0;
 	display: flex;
 	justify-content: space-around;
 	margin-bottom: 20px;
 	z-index: 50;
+	width: 100%;
 }
+
+.navdiv {
+width: 30%;
+justify-content: space-around;
+}
+
 
 .navbar i {
     color: white !important; /* Ensures all icons in navbar are white */
