@@ -4,27 +4,6 @@
    	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		   <link rel="stylesheet" href="style.css"/>
 		   <link rel="stylesheet" href="grid.css"/>
-		<script>
-			function setTheme() {
-				// Check if the user's system prefers dark mode
-				const prefersDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
-		
-				// Create a link element for the stylesheet
-				const link = document.createElement("link");
-				link.rel = "stylesheet";
-				link.id = "theme-style";
-		
-				// Apply the appropriate stylesheet
-				link.href = prefersDarkMode ? "darkstyle.css" : "style.css";
-		
-				// Append the link to the head
-				document.head.appendChild(link);
-			}
-		
-			// Run the function on page load
-			setTheme();
-		</script>
-		
 		<title>Progress Watcher by Siya Percy</title>
 	</head>
 	<script>
@@ -50,18 +29,7 @@
 
 	<body>
 		<div class="container">
-			
-		
-			
-		<!--	<div class="navbar">
-				<a id="swhref" href="#stopwatch"><button><i  class="fab fa-google"></i></button></a>
-				<a id="chref" href="#clock"><button><i class="fas fa-map-marker-alt"></i></button></a>
-				<a id="thref" href="#timer"><button><i class="fas fa-users"></i></button></a>
-				<a id="thref" href="#social"><button><i class="fab fa-instagram"></i></button></a>
-		-->
-
-
-<div class="navbar">
+			<div class="navbar">
     <div class="">
         <a id="" href="#internet">
             <button   data-tooltip="Info from the internet" ><i class="fab fa-google"></i></button> <!-- Google Icon -->
