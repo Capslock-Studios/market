@@ -77,7 +77,39 @@ input[type="text"] {
 }
 
 
+.hint {
+	margin: 50px auto;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
 
+
+  button {
+    position: relative;
+}
+
+button:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    background: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    bottom: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+button:hover::after {
+    opacity: 1;
+}
 .loader {
     align-items: center !important;
     justify-content: center !important;
