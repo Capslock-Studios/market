@@ -276,13 +276,13 @@ button:hover::after {
 	justify-content: space-around;
 	margin-bottom: 0px;
 	z-index: 50;
-	background-color: #ECF0F3;
-	border-radius: 22px;
+	background-color: #303030;
+	border-radius:  22px 22px 0 0;
 	padding-top: 20px;
 }
 
 .navbar i {
-    color: black !important; /* Ensures all icons in navbar are white */
+    color: white !important; /* Ensures all icons in navbar are white */
 	text-decoration: none;
 }
 
@@ -291,12 +291,16 @@ button:hover::after {
 	width: 55px;
 	margin: 0px 20px 0px 20px;
 	border-radius: 10px;
-	border: 1px solid #F3F3F3; box-shadow: 5px 5px 10px #c3c3c3, -5px -5px 12px #ffffff;
+	border: 1px solid #8b8b8b; box-shadow: 5px 5px 10px #313131, -5px -5px 12px #3d3d3d;
 }
 
 .navbar button:hover{
-	box-shadow: inset 3px 3px 3px #cbced1, inset -3px -3px 3px white;
+	box-shadow: inset 3px 3px 3px #303030, inset -5px -5px 5px rgb(34, 34, 34);
+
 }
+
+
+
 
 /* Bagian Jam*/
 .clock-section{
@@ -329,7 +333,7 @@ button:hover::after {
 	font-size: .6em;
 	font-weight: bold;
 	border-radius: 10px;
-	border: 1px solid #F3F3F3; background: #ECF0F3; box-shadow: 3px 3px 7px #c3c3c3, -2px -2px 5px #ffffff;
+	border: 1px solid #b1afaf; background: #929699; box-shadow: 3px 3px 7px #8d8d8d, -2px -2px 5px #000000;
 }
 
 /* Universal Analog */
@@ -353,7 +357,7 @@ button:hover::after {
 	width: 90px;
 	height: 90px;
 	border-radius: 100%;
-	border: 1px solid #F3F3F3; background: #ECF0F3; box-shadow: 3px 3px 7px #c3c3c3, -2px -2px 5px #ffffff;
+	border: 1px solid #726b6b; background: #7b7e80; box-shadow: 3px 3px 7px #616060, -2px -2px 5px #000000;
 }
 
 .progress-ring{
@@ -588,9 +592,9 @@ button:hover::after {
 	scroll-snap-type: x mandatory;
  	scroll-behavior: smooth;
   	-webkit-overflow-scrolling: touch;
-	border: solid 1px #b8b8b8 ;
-	box-shadow: inset 3px 3px 3px #cbced1, inset -3px -3px 3px white;
-	background-color: #ECF0F3 !important; /* Adjust as needed */
+	  border: solid 1px #999797 ;
+	  box-shadow: inset 6px 6px 6px #363738, inset -5px -5px 5px rgb(43, 43, 43);
+	  background-color: #363738;
 }
 
   .rival-boxes img {
@@ -613,12 +617,15 @@ button:hover::after {
 	text-align: center;
 	border-radius: 50%;
 	margin: 0px 6px 0px 6px;
-	border: 1px solid #F3F3F3; background: #ECF0F3; box-shadow: 5px 5px 5px #c3c3c3, -5px -5px 6px #ffffff;
+	border: 1px solid #8d8b8b; background: #3d3d3d; box-shadow: 6px 6px 6px #383737, -6px -6px 6px #1d1d1d;
 	flex-shrink: 0;
 	scroll-snap-align: end;
 }
 
 
+.fab.fa-google {
+    color: white !important;  /* Changes icon color to white */
+}
 
 .rival-boxes button:hover{
 	box-shadow: inset 3px 3px 3px #cbced1, inset -3px -3px 3px white;

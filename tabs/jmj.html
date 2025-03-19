@@ -2,7 +2,7 @@
 <html>
 	<head>
    	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		   <link rel="stylesheet" href="dark.css"/>
+		   <link rel="stylesheet" href="darkstyle.css"/>
 		   <link rel="stylesheet" href="grid.css"/>
 			<title>Progress Watcher by Siya Percy</title>
 	</head>
@@ -291,13 +291,70 @@
 						<br>
 						<p>We are a fashion forward company that caters for corporate, social bespoke and everyday wear.</p>
 					
-						<Button style="width: 120px;
-						height: 60px;
-						border-radius: 10px;
-						font-weight: bold;
-						font-size: 1.1em;
-						margin: 20px;
-						border: 1px solid #F3F3F3; background: #ECF0F3; box-shadow: 8px 8px 16px #c3c3c3, -5px -5px 5px #ffffff;">edit</Button>
+			
+							<style>
+								body {
+									font-family: Arial, sans-serif;
+									margin: 20px;
+								}
+								.faq-container {
+									max-width: 600px;
+									margin: 0 auto;
+								}
+								.faq-item {
+									border-bottom: 1px solid #ccc;
+									padding: 10px 0;
+								}
+								.faq-question {
+									cursor: pointer;
+									font-weight: bold;
+									padding: 10px;
+									background: #f4f4f4;
+									border-radius: 5px;
+								}
+								.faq-answer {
+									display: none;
+									padding: 10px;
+									background: #e9e9e9;
+									border-radius: 5px;
+								}
+							</style>
+				
+							<div class="faq-container">
+								<div class="faq-item">
+									<div class="faq-question">What's trending in Fashion?</div>
+									<div class="faq-answer">Sustainable fashion and minimalist styles are currently trending.</div>
+								</div>
+								<div class="faq-item">
+									<div class="faq-question">What's new in IT?</div>
+									<div class="faq-answer">AI, blockchain, and cybersecurity innovations are making waves in IT.</div>
+								</div>
+								<div class="faq-item">
+									<div class="faq-question">Latest trends in Engineering?</div>
+									<div class="faq-answer">Renewable energy solutions and smart infrastructure are trending in engineering.</div>
+								</div>
+							</div>
+						
+							<script>
+								document.addEventListener("DOMContentLoaded", function () {
+									const questions = document.querySelectorAll(".faq-question");
+									
+									questions.forEach(question => {
+										question.addEventListener("click", function () {
+											// Close any open answer
+											document.querySelectorAll(".faq-answer").forEach(answer => {
+												if (answer !== this.nextElementSibling) {
+													answer.style.display = "none";
+												}
+											});
+											
+											// Toggle the clicked answer
+											const answer = this.nextElementSibling;
+											answer.style.display = answer.style.display === "block" ? "none" : "block";
+										});
+									});
+								});
+							</script>
 						
 						<div class="card-div" >
 							<h4>hello world</h4>
@@ -307,22 +364,7 @@
 							<h4>hello world</h4>
 							<p>there will be things here</p>
 						</div>
-						<div class="card-div" >
-							<h4>hello world</h4>
-							<p>there will be things here</p>
-						</div>
-						<div class="card-div" >
-							<h4>hello world</h4>
-							<p>there will be things here</p>
-						</div>
-						<div class="card-div" >
-							<h4>hello world</h4>
-							<p>there will be things here</p>
-						</div>
-						<div class="card-div" >
-							<h4>hello world</h4>
-							<p>there will be things here</p>
-						</div>
+					
 					
 						<p>We are a fashion forward company that caters for corporate, social bespoke and everyday wear.</p>
 					
