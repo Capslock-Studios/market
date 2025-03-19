@@ -441,6 +441,8 @@ button:hover::after {
 	align-items: center;
 	flex-direction: column;
 	margin-bottom:15px ;
+	margin-top: 40px;
+	
 }
 
 .laptab{

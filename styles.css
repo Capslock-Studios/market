@@ -18,36 +18,122 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	
 }
 
 body{
-	padding: 0px;
+	padding: 10px;
 	overflow: hidden;
 	height: 100vh;
 	width: 100vw;
 	margin: 0;
-	background-color:  #ECF0F3;
-}
-
-.loader {
-    align-items: center !important;
-    justify-content: center !important;
-    height: 100% !important; /* Full screen height */
-    text-align: center !important;
-    background-color: #ECF0F3 !important; /* Adjust as needed */
-    color: rgb(27, 27, 27) !important;
-	z-index: 9999;
+	background-color: #ECF0F3;
 }
 
 
-.loader-image {
-    width: 100px; /* Adjust size as needed */
-    height: auto;
-    margin-bottom: 20px;
+
+.video-card {
+	position: relative;
+	width: 30px;
+	height: 50px;
+	overflow: hidden;
+	border-radius: 20px;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+	background: black;
+}
+.video-card video {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.video-overlay {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 50%;
+	padding: 16px;
+	background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+	color: rgb(243, 9, 9);
+	background-color: #00b700;
+}
+.video-overlay p {
+	margin: 4px 0;
+	font-size: 14px;
+}
+.play-button {
+	position: absolute;
+	top: 16px;
+	right: 16px;
+	padding: 10px;
+	background: rgba(255, 255, 255, 0.2);
+	border-radius: 50%;
+	backdrop-filter: blur(5px);
+	border: none;
+	cursor: pointer;
+}
+.play-button svg {
+	width: 24px;
+	height: 24px;
+	fill: white;
 }
 
-button {
+
+
+.searchbar {
+    background-color: gray;
+    border-radius: 22px;
+    top: 0;
+    height: 200px;
+    position: relative; /* Or fixed if needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.search-container {
+    border-radius: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	margin: 10px;
+}
+
+input[type="text"] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border-radius: 22px;
+    border: 1px solid white;
+    box-shadow: inset 3px 3px 3px #cbced1, inset -3px -3px 3px white;
+    outline: none; /* Removes default browser focus */
+}
+
+input[type="text"]:focus {
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: 0 0 5px rgba(116, 116, 116, 0.8);
+}
+
+input[type="text"] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border-radius: 22px;
+    border: 1px solid white;
+	box-shadow: inset 3px 3px 3px #cbced1, inset -3px -3px 3px white;
+    outline: none; /* Removes default browser focus */
+}
+
+
+.hint {
+	margin: 50px auto;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+
+
+  button {
     position: relative;
 }
 
@@ -71,17 +157,179 @@ button:hover::after {
 button:hover::after {
     opacity: 1;
 }
+.loader {
+    align-items: center !important;
+    justify-content: center !important;
+    height: 100px !important; /* Full screen height */
+    text-align: center !important;
+    background-color: #000 !important; /* Adjust as needed */
+    color: white !important;
+	
+}
 
+.edit {
+						width: 120px;
+						height: 60px;
+						border-radius: 10px;
+						font-weight: bold;
+						font-size: 1.1em;
+						margin: 20px;
+}
+
+.loader-image {
+    width: 200px; /* Adjust size as needed */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.slogan {
+    font-size: 18px;
+    font-weight: bold;
+    color: #f3f3f3; /* Adjust to match theme */
+}
+
+.container{
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Open Sans';
+	overflow: hidden;
+}
+
+.content-wrapper{
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-wrap: nowarp;
+	padding-bottom: 5%;
+	overflow-x: auto;
+  	scroll-snap-type: x mandatory;
+	overflow-y: hidden;
+ 	scroll-behavior: smooth;
+  	-webkit-overflow-scrolling: touch;
+}
+
+.content-wrapper a{
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin: 30px 30px 0px 0px;
+	z-index: 1000;
+	color: black;
+	text-decoration: none;
+}
+
+
+.a {
+	position: fixed;
+	top: 7%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 1000;
+	background-color: rgb(255, 0, 0);
+	text-decoration: none;
+	padding-bottom: 1px;
+	background: none;
+  }
+  
+
+.content-wrapper a:active{
+	color: black;
+}
+
+
+.sec { display: flex;
+	justify-content:space-around;
+	width: 200px;
+ }
+.loader{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	font-size: 1em;
+	z-index: 100;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* From Uiverse.io by AnasKhraim20 */ 
+.card-main {
+	position: relative;
+	width: 200px;
+	height: 250px;
+	border-radius: 14px;
+	z-index: 1111;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  }
+  
+  .bg {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 190px;
+	height: 240px;
+	z-index: 2;
+	background: rgba(255, 255, 255, 0.95);
+	backdrop-filter: blur(24px);
+	border-radius: 10px;
+	overflow: hidden;
+	outline: 2px solid white;
+  }
+  
+  .blob {
+	position: absolute;
+	z-index: 1;
+	top: 50%;
+	left: 50%;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	background-color: #ff0000;
+	opacity: 1;
+	filter: blur(12px);
+	animation: blob-bounce 0s infinite ease;
+  }
+  
+  @keyframes blob-bounce {
+	0% {
+	  transform: translate(-100%, -100%) translate3d(0, 0, 0);
+	}
+  
+	25% {
+	  transform: translate(-100%, -100%) translate3d(100%, 0, 0);
+	}
+  
+	50% {
+	  transform: translate(-100%, -100%) translate3d(100%, 100%, 0);
+	}
+  
+	75% {
+	  transform: translate(-100%, -100%) translate3d(0, 100%, 0);
+	}
+  
+	100% {
+	  transform: translate(-100%, -100%) translate3d(0, 0, 0);
+	}
+  }
+
+  
 .card {
-	width: 290px;
-	height:  220px;
-	padding: 10px 10px 40px 10px;
+	width: 254px;
+	height:  290px;
+	padding: .8em;
 	background: #f5f5f5;
 	position: relative;
 	overflow: visible;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-	margin: 15px;
-	border-radius: 18px;
+	margin: 10px;
    }
    
    .card-img {
@@ -143,81 +391,9 @@ button:hover::after {
 	background-color: #ffcaa6;
    }
    
-.card-div {
-	height: 150px; 
-	width: 100%; 
-	background-color: red; 
-	padding: 5px;
-	margin: 5px;
-	border-radius: 18px;
-}
-.slogan {
-    font-size: 18px;
-    font-weight: bold;
-    color: #f3f3f3; /* Adjust to match theme */
-}
-
-.container{
-	height: 100%;
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Open Sans';
-	overflow: hidden;
-}
-
-.content-wrapper{
-	margin-top: 0;
-	height: 100%;
-	width: 100%;
-	display: flex;
-	flex-wrap: nowarp;
-	padding-bottom: 0%;
-	overflow-x: auto;
-  	scroll-snap-type: x mandatory;
-	overflow-y: hidden;
- 	scroll-behavior: smooth;
-  	-webkit-overflow-scrolling: touch;
-	border-radius: 33px;
-}
-
-.content-wrapper a{
-	position: absolute;
-	right: 0;
-	top: 0;
-	margin: 30px 30px 0px 0px;
-	z-index: 100;
-	color: black;
+						   
+.navbar i {
 	text-decoration: none;
-	background-color: #d9e70d;
-}
-
-
-.a {
-	position: fixed;
-	top: 7%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	z-index: 100;
-	color: black;
-	text-decoration: none;
-  }
-  
-
-.content-wrapper a:active{
-	color: black;
-}
-
-.loader{
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	font-size: 1em;
-	z-index: 100;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 }
 
 .topnavbar{
@@ -225,7 +401,6 @@ button:hover::after {
 	top: 0;
 	left: 0;
 	margin: 15px 0px 0px 15px;
-	background-color: #1eb337;
 }
 
 .topnavbar h2{
@@ -237,17 +412,12 @@ button:hover::after {
 	bottom: 0;
 	display: flex;
 	justify-content: space-around;
-	margin-bottom: 0px;
+	margin-bottom: 0x;
 	z-index: 50;
-	background-color: #ECF0F3;
-	border-radius: 22px;
-	padding-top: 20px;
+	width: 100%;
+padding: 5px;
 }
 
-.navbar i {
-    color: black !important; /* Ensures all icons in navbar are white */
-	text-decoration: none;
-}
 
 .navbar button{
 	height: 55px;
@@ -430,19 +600,20 @@ button:hover::after {
 	align-items: center;
 	flex-direction: column;
 	overflow-y: scroll;
-	margin-top: 10px;
+	margin-top: 30px;
 	width: 300px;
-	height: 100%;
+	height: 98%;
+	background-color: #4B00B7;
 }
 
 .lap-box{
 	display: flex;
 	justify-content: start;
 	align-items: center;
-	flex-direction: column;
-	margin-bottom:15px ;
-	margin-top: 40px;
-	
+	flex-direction:column;
+	width: 300px;
+	height: 90px;
+	background-color: red;
 }
 
 .laptab{
@@ -452,6 +623,7 @@ button:hover::after {
 	justify-content: space-around;
 	height: 35px;
 	width: 250px;
+	background-color: green;
 	text-align: center;
 	border-radius: 5px;
 	margin: 5px 0px 5px 0px;
@@ -553,7 +725,7 @@ button:hover::after {
   	-webkit-overflow-scrolling: touch;
 	border: solid 1px #b8b8b8 ;
 	box-shadow: inset 3px 3px 3px #cbced1, inset -3px -3px 3px white;
-	background-color: #ECF0F3 !important; /* Adjust as needed */
+	background-color: none;
 }
 
   .rival-boxes img {
@@ -735,9 +907,20 @@ button:hover::after {
 	.navbar{
 		max-width: 100%;
 	}
+
+	.navdiv {
+		justify-content: space-around;
+		}
+
+
 	.navbar button{
 		margin: 0px 10px 0px 10px;
   }
+
+  .navdiv {
+	justify-content: space-around;
+	}
+
 }
 @media only screen and (max-width: 310px) {
 	.rival-boxes {
@@ -746,9 +929,19 @@ button:hover::after {
 	.navbar{
 		max-width: 100%;
 	}
+
+	.navdiv {
+		justify-content: space-around;
+		}
+
+
 	.navbar button{
 		margin: 0px 10px 0px 10px;
   }
+
+  .navdiv {
+	justify-content: space-around;
+	}
 }
   @media only screen and (max-width: 400px) {
 	.rival-boxes {
@@ -758,7 +951,23 @@ button:hover::after {
 		max-width: 100%;
 	}
 
+	.navdiv {
+		justify-content: space-around;
+		}
+
 	.navbar button{
 		margin: 0px 10px 0px 10px;
 	}
   }
+
+
+
+
+
+
+
+
+
+
+
+
