@@ -181,12 +181,12 @@ button:hover::after {
    }
    
 .card-div {
-	height: 150px; 
+	height: auto; 
 	width: 100%; 
-	background-color: red; 
-	padding: 5px;
-	margin: 5px;
+	padding: 15px;
+	margin: 15px;
 	border-radius: 18px;
+	background-color: #f3f3f3;
 }
 .slogan {
     font-size: 18px;

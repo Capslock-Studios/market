@@ -25,7 +25,7 @@
 
     // Run the function on page load
     setTheme();
-</script>
+	</script>
 <body>
 		<div class="container">
 		<div class="loader"><h1>Proudly S.A</h1>
@@ -53,7 +53,7 @@
 			</div>
 			<div class="stopw-section" id="internet">
 					<!-- There is a bug with overlow -->
-				<div class="lap-box-fixer">
+			<div class="lap-box-fixer">
 					<div class="lap-box">
 					<br>
 						<h1>Proudly S.A</h1>
@@ -69,36 +69,48 @@
 				<span class="left-pan"><i class="fa fa-microphone"></i></span>
 			  </div>
 			</div>
-			</div>
+					</div>
 						<div class="card-div" >
-							<h4>hello world</h4>
-							<p>there will be things here</p>
+															<style>
+									.video-card {
+										background: #f4f4f4;
+										padding: 15px;
+										border-radius: 8px;
+										text-align: center;
+										margin-bottom: 20px;
+									}
+									.comments {
+										margin-top: 20px;
+									}
+									.comment-box {
+										width: 100%;
+										padding: 10px;
+										margin-top: 10px;
+									}
+									.comment-list {
+										margin-top: 10px;
+									}
+									.comment-item {
+										background: #e9e9e9;
+										padding: 10px;
+										margin-bottom: 5px;
+										border-radius: 5px;
+									}
+								</style>
+								<div class="video-card">
+								<h2>Watch & Comment</h2>
+								<iframe width="100%" height="315" src="https://www.youtube.com/embed/tg0soDatGDo" frameborder="0" allowfullscreen></iframe>
+							</div>
+							<div class="comments">
+								<h3>Leave a Comment</h3>
+								<textarea id="commentInput" class="comment-box" placeholder="Write your comment..."></textarea>
+								<button onclick="addComment()">Post Comment</button>
+								<div class="comment-list" id="commentList"></div>
+							</div>
 						</div>
-						<div class="card-div" >
-							<h4>hello world</h4>
-							<p>there will be things here</p>
-						</div>
-						<div class="card-div" >
-							<h4>hello world</h4>
-							<p>there will be things here</p>
-						</div>
-						<div class="card-div" >
-							<h4>hello world</h4>
-							<p>there will be things here</p>
-						</div>
-						<div class="card-div" >
-							<h4>hello world</h4>
-							<p>there will be things here</p>
-						</div>
-						<div class="card-div" >
-							<h4>hello world</h4>
-							<p>there will be things here</p>
-						</div>
-					
-						<p>We are a fashion forward company that caters for corporate, social bespoke and everyday wear.</p>
-						</div>
-
+					<br>
 				</div>
+			</div>
 
 				</div>
 				<div class="clock-section" id="clock">
@@ -261,9 +273,7 @@
 	</div>
   </div></div>
 					</div>
-					
 				</div>
-				
 			</div>
 
 				 <div class="social-section" id="social">
