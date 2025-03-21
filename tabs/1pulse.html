@@ -3,40 +3,84 @@
 	<head>
    	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		   <link rel="stylesheet" href="style.css"/>
-		   <link rel="stylesheet" href="grid.css"/>
 			<title>Progress Watcher by Siya Percy</title>
 	</head>
-	<script>
-    function setTheme() {
-        // Check if the user's system prefers dark mode
-        const prefersDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
-
-        // Create a link element for the stylesheet
-        const link = document.createElement("link");
-        link.rel = "stylesheet";
-        link.id = "theme-style";
-
-        // Apply the appropriate stylesheet
-        link.href = prefersDarkMode ? "darkstyle.css" : "styles.css";
-
-        // Append the link to the head
-        document.head.appendChild(link);
-    }
-
-    // Run the function on page load
-    setTheme();
-</script>
 <body>
+	
 	<style>
-		
+
+		.user-card {
+			width: 350px;
+			background: white;
+			border-radius: 8px;
+			box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+			overflow: hidden;
+			text-align: center;
+			padding-bottom: 20px;
+		}
+	
+		.cover-photo {
+			width: 100%;
+			height: 120px;
+			background: url('https://gratisography.com/wp-content/uploads/2024/11/gratisography-augmented-reality-800x525.jpg') no-repeat center/cover;
+			position: relative;
+		}
+	
+		.profile-photo {
+			width: 90px;
+			height: 90px;
+			border-radius: 50%;
+			border: 4px solid white;
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			bottom: -45px;
+		}
+	
+		.user-info {
+			padding: 50px 20px 10px;
+		}
+	
+		.user-info h3 {
+			margin: 0;
+			font-size: 20px;
+			color: #333;
+		}
+	
+		.user-info p {
+			color: gray;
+			font-size: 14px;
+			margin: 5px 0;
+		}
+	
+		.buttons {
+			display: flex;
+			justify-content: center;
+			gap: 10px;
+			margin-top: 10px;
+		}
+	
+		.buttons button {
+			background: #1877f2;
+			color: white;
+			border: none;
+			padding: 8px 15px;
+			border-radius: 4px;
+			cursor: pointer;
+			font-size: 14px;
+		}
+	
+		.buttons button:hover {
+			background: #165dbb;
+		}
 	</style>
 		<div class="container">
 			
-			<div class="loader"><h1>Proudly S.A</h1></div>
+			<div class="loader"><h1>WhatsNext</h1></div>
 			
 			<div class="navbar">
-				<a id="swhref" href="#internet"><button data-tooltip="Info from the internet" title="Search with Google"><i class="fab fa-google"></i></button></a>
-				<a id="chref" href="#clock"><button data-tooltip="What they sell" title="Shopping Cart"><i class="fas fa-shopping-cart"></i></button></a>
+				<a id="swhref" href="#internet"><button data-tooltip="What they sell" title="Shopping Cart"><i class="fas fa-shopping-cart" ></i></button></a>
+				<a id="chref" href="#clock"><button data-tooltip="Info from the internet" title="Search with Google"><i class="fab fa-google"></i></button></a>
 				<a id="thref" href="#timer"><button data-tooltip="What they post" title="Social Media"><i class="fas fa-users"></i></button></a>
 				<a id="thref" href="#social">   <button data-tooltip="talk to them" title="Messages"><i class="fas fa-comment-alt"></i></button></a>
 
@@ -49,90 +93,28 @@
 						<button class="rival-boxes" onclick="window.location.href='../index.html'">
 						<img src="Img/whatsnext.png" alt="BZ Image">
 					  </button>
-					  <button onclick="window.location.href='#internet'"><img src="Img/psa.png" alt="proudly"></button>
-					  <button onclick="window.location.href='gnu.html'"><img src="Img/gnu.png" alt="Government of NU"></button>
-					  <button onclick="window.location.href='jmj.html'"><img src="Img/JmJ.png" alt="BZ Image"></button>
-					  <button onclick="window.location.href='1pulse.html'"><img src="Img/1pulse online logo CRcL2.png" alt="BZ Image"></button>
-					  <button onclick="window.location.href='tshimologong.html'"><img src="Img/Tshimologong.png" alt="BZ Image"></button>
-					  <button onclick="window.location.href='sagov.html'"><img src="Img/gov.png" alt="BZ Image"></button>
-					  <button onclick="window.location.href='bonizulu.html'"><img src="Img/bonizulu-logo-dark.webp" alt="BZ Image"></button>
+					  <button onclick="window.location.href='tabs/psa.html'"><img src="Img/psa.png" alt="proudly"></button>
+					  <button onclick="window.location.href='tabs/gnu.html'"><img src="Img/gnu.png" alt="Government of NU"></button>
+					  <button onclick="window.location.href='tabs/jmj.html'"><img src="Img/JmJ.png" alt="BZ Image"></button>
+					  <button onclick="window.location.href='tabs/1pulse.html'"><img src="Img/1pulse online logo CRcL2.png" alt="BZ Image"></button>
+					  <button onclick="window.location.href='tabs/tshimologong.html'"><img src="Img/Tshimologong.png" alt="BZ Image"></button>
+					  <button onclick="window.location.href='tabs/sagov.html'"><img src="Img/gov.png" alt="BZ Image"></button>
+					  <button onclick="window.location.href='tabs/bonizulu.html'"><img src="Img/bonizulu-logo-dark.webp" alt="BZ Image"></button>
 						
 			</div>
 			</div>
-				
-				<div class="stopw-section" id="internet">
-					<!-- There is a bug with overlow -->
-					<div class="lap-box-fixer">
-						<div class="lap-box">
-							<br>
-						<h1>Proudly S.A</h1>
-				
-						<p>We are a fashion forward company that caters for corporate, social bespoke and everyday wear.</p>
-					
-
-<h2>Welcome to whatsnext</h2>
-
-  <div class="row height d-flex justify-content-center align-items-center">
-
-	<div class="col-md-6">
-
-	  <div class="form">
-		<i class="fa fa-search"></i>
-		<input type="text" class="form-control form-input" placeholder="Search anything...">
-		<span class="left-pan"><i class="fa fa-microphone"></i></span>
-	  </div>
-	  
-	</div>
-	
-  </div>
-						<Button style="width: 120px;
-						height: 60px;
-						border-radius: 10px;
-						font-weight: bold;
-						font-size: 1.1em;
-						margin: 20px;
-						border: 1px solid #F3F3F3; background: #ECF0F3; box-shadow: 8px 8px 16px #c3c3c3, -5px -5px 5px #ffffff;">edit</Button>
-						
-						<div class="card-div" > 
-							<div class="video-card">
-							<h2>Watch & Comment</h2>
-							<iframe width="100%" height="315" src="https://www.youtube.com/embed/fLQwwh5sSWQ" frameborder="0" allowfullscreen></iframe>
-						</div>
-						<div class="comments">
-							<h3>Leave a Comment</h3>
-							<textarea id="commentInput" class="comment-box" placeholder="Write your comment..."></textarea>
-							<button onclick="addComment()">Post Comment</button>
-							<div class="comment-list" id="commentList"></div>
-						</div>
-						</div>
-						<div class="card-div" >
-							<h4>hello world</h4>
-							<p>there will be things here</p>
-						</div>
-					
-						<p>We are a fashion forward company that caters for corporate, social bespoke and everyday wear.</p>
-					
-						<Button style="width: 120px;
-						height: 60px;
-						border-radius: 10px;
-						font-weight: bold;
-						font-size: 1.1em;
-						margin: 20px;
-						border: 1px solid #F3F3F3; background: #ECF0F3; box-shadow: 8px 8px 16px #c3c3c3, -5px -5px 5px #ffffff;">edit</Button>
-						
-					</div>
-
-				</div>
-
-				</div>
-				<div class="clock-section" id="clock">
-					<div class="lap-box-fixer">
-						<div class="lap-box" style="padding-top: 30px;">
-						<p>We are a fashion forward company that caters for corporate, social bespoke and everyday wear.</p>
-						<br><p>Talk of the town updats..Events etc.</p>
+			<div class="clock-section" id="internet">
+				<div class="lap-box-fixer">
+					<div class="lap-box">
+					<div class="sec">
+					<div style="padding: 15px;">
 						<h1></h1>
 						<h3></h3>
-						
+						<p>Fill the petition so your voive can be heared.</p>
+						<br>
+					</div>
+						<!-- From Uiverse.io by alexruix --> 
+
 
 						<style>
 							body {
@@ -164,9 +146,9 @@
 			
 						<div class="faq-container">
 							<div class="faq-item">
-								<div class="faq-question">What's trending in Fashion?</div>
+								<div class="faq-question">Sign Community Petition</div>
 								<div class="faq-answer">
-									<h1 class="text-center my-4">Community Savvy</h1>
+									<h1 class="text-center my-4">Community Petition</h1>
 										<p class="text-center">We are taking this mandate to the municipality. Show your support by signing up below.</p>
 										
 										<div class="scroll-box mb-4">
@@ -247,8 +229,81 @@
 								</div>
 							</div>
 							<div class="faq-item">
-								<div class="faq-question">What's new in IT?</div>
-								<div class="faq-answer">AI, blockchain, and cybersecurity innovations are making waves in IT.</div>
+								<div class="faq-question">Start Petition</div>
+								<div class="faq-answer">Write the issue you feel strongly about and share the link with your community to get support and make a difference.
+									
+								<style>
+									.form-container {
+										width: 300px;
+										padding: 5px;
+										border-radius: 10px;
+										box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+									}
+							
+									h2 {
+										text-align: center;
+										margin-bottom: 11px;
+									}
+							
+									label {
+										font-weight: bold;
+										display: block;
+										margin-top: 5px;
+										border-radius: 20px;
+									}
+							
+									input, textarea {
+										width: 100%;
+										padding: 10px;
+										margin-top: 5px;
+										border: 1px solid #ccc;
+										border-radius: 5px;
+									}
+							
+									.gps-info {
+										font-size: 12px;
+										color: gray;
+									}
+							
+								
+							
+								
+								</style>
+									<div class="form-container">
+										<h2>Submit a Petition</h2>
+										<form id="petitionForm">
+											<label for="fullName">Full Name</label>
+											<input type="text" id="fullName" name="fullName" required>
+								
+											<label for="email">Email</label>
+											<input type="email" id="email" name="email" required>
+								
+											<label for="title">Petition Title</label>
+											<input type="text" id="title" name="title" required>
+								
+											<label for="description">Petition Description</label>
+											<textarea id="description" name="description" rows="4" required></textarea>
+								
+											<label>GPS Location:</label>
+											<p class="gps-info">Latitude: <span id="latitude">Fetching...</span> | Longitude: <span id="longitude">Fetching...</span></p>
+								
+											<input type="hidden" id="gpsLat" name="gpsLat">
+											<input type="hidden" id="gpsLng" name="gpsLng">
+								
+											<button
+											style="width: 100%;
+											padding: 10px;
+											background: #007bff;
+											color: white;
+											border: none;
+											border-radius: 20px;
+											margin-top: 15px;
+											cursor: pointer;
+											font-size: 16px;" type="submit">Submit Petition</button>
+										</form>
+									</div>
+								</div>
+								
 							</div>
 							<div class="faq-item">
 								<div class="faq-question">Latest trends in Engineering?</div>
@@ -276,101 +331,384 @@
 								});
 							});
 						</script>
-					</div>
+		</div>
+
+
+
+
+
+
+
+
+					
 					
 				</div>
-					
+			</div>
+			
+				<!-- There is a bug with overlow -->
 				
+
+			</div>
+				<div class="stopw-section" id="clock">
 					<!-- There is a bug with overlow -->
+					<div class="lap-box-fixer">
+						<div class="lap-box">
+							<br>
+						<h1>WhatsNext</h1>
+				
+						<p>We are a fashion forward company that caters for corporate, social bespoke and everyday wear.</p>
 					
 
+<h2>Welcome to whatsnext</h2>
+
+  <div class="row height d-flex justify-content-center align-items-center">
+
+	<div class="col-md-6">
+
+	  <div class="form">
+		<i class="fa fa-search"></i>
+		<input type="text" class="form-control form-input" placeholder="Search anything...">
+		<span class="left-pan"><i class="fa fa-microphone"></i></span>
+	  </div>
+	  
+	</div>
+	
+  </div><br>
+						<div class="user-card" style="border: 1px solid gray;">
+							<div class="cover-photo">
+								<img src="https://whatsnextgp.netlify.app/Img/1pulse%20online%20logo%20CRcL2.png" alt="Profile Picture" class="profile-photo">
+							</div>
+							<div class="user-info">
+								<h3>Siya Percy</h3>
+								<p>Software Developer at TechCorp</p>
+							</div>
+							<div class="buttons">
+								<button>Add Friend</button>
+								<button>Message</button>
+							</div>
+						</div>
+						<style>
+					
+							.tiktok-card {
+								width: 320px;
+								height: 560px;
+								background: black;
+								position: relative;
+								border-radius: 15px;
+								overflow: hidden;
+								box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+							}
+					
+							.video-container {
+								width: 100%;
+								height: 100%;
+							}
+					
+							.video-container iframe {
+								width: 100%;
+								height: 100%;
+								border: none;
+							}
+					
+							/* User Info & Caption */
+							.tiktok-user-info {
+								position: absolute;
+								bottom: 70px;
+								left: 15px;
+								color: white;
+							}
+					
+							.tiktok-user-info h4 {
+								margin: 0;
+								font-size: 16px;
+								font-weight: bold;
+							}
+					
+							.tiktok-user-info p {
+								margin: 5px 0;
+								font-size: 14px;
+							}
+					
+							/* Floating Sidebar */
+							.floating-actions {
+								position: absolute;
+								right: 10px;
+								bottom: 60px;
+								text-align: center;
+								color: white;
+							}
+					
+							.floating-actions div {
+								margin: 15px 0;
+								font-size: 18px;
+								cursor: pointer;
+							}
+					
+							.floating-actions img {
+								width: 40px;
+								height: 40px;
+								border-radius: 50%;
+								border: 2px solid white;
+								margin-bottom: 10px;
+							}
+						</style>
+						<div class="tiktok-card">
+							<div class="video-container">
+								<iframe src="https://www.youtube.com/embed/fLQwwh5sSWQ?autoplay=1&mute=1&loop=1&controls=0" allowfullscreen></iframe>
+							</div>
+					
+							<!-- Floating User Info -->
+							<div class="tiktok-user-info">
+								<h4>@JaneDoe</h4>
+								<p>🌅 Enjoying the sunset! #Nature #Peaceful</p>
+							</div>
+					
+							<!-- Floating Action Buttons -->
+							<div class="floating-actions">
+								<img src="https://source.unsplash.com/100x100/?portrait" alt="Profile Picture">
+								<div>❤️ 1.2K</div>
+								<div>💬 324</div>
+								<div>↪️ 89</div>
+							</div>
+						</div>
+					
+						<p>We are a fashion forward company that caters for corporate, social bespoke and everyday wear.</p>
+					
+					</div>
+
 				</div>
+
+				</div>
+				
 			
 			
 				<div class="timer-section" id="timer">
-					
 					<div class="lap-box-fixer">
-						<div class="lap-box">
-						<div class="sec">
-						<div style="padding: 15px;">
-							<h1></h1>
-							<h3></h3>
-							<p>This is where you get news by location.</p>
-							<br>
-							<p>We are a fashion forward company that caters for corporate, social bespoke and everyday wear.</p>
+						<div class="lap-box" style="padding-top: 30px;">
+						<p>We are a fashion forward company that caters for corporate, social bespoke and everyday wear.</p>
+						<br><p>Talk of the town updats..Events etc.</p>
+						<h1></h1>
+						<h3></h3>
+						<style>
+							.post-card {
+								max-width: 400px;
+								background: white;
+								border-radius: 8px;
+								box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+								padding: 15px;
+								border: solid 1px grey;
+							}
+					
+							.post-header {
+								display: flex;
+								align-items: center;
+								gap: 10px;
+								margin-bottom: 10px;
+							}
+					
+							.profile-photo {
+								width: 40px;
+								height: 40px;
+								border-radius: 50%;
+							}
+					
+							.user-info {
+								display: flex;
+								flex-direction: column;
+							}
+					
+							.user-info h4 {
+								margin: 0;
+								font-size: 16px;
+								font-weight: bold;
+							}
+					
+							.user-info p {
+								margin: 0;
+								font-size: 12px;
+								color: gray;
+							}
+					
+							.post-content {
+								font-size: 14px;
+								color: #333;
+								margin: 10px 0;
+							}
+					
+							.post-image {
+								width: 100%;
+								border-radius: 8px;
+								margin-top: 10px;
+							}
+					
+							.post-actions {
+								display: flex;
+								justify-content: space-between;
+								margin-top: 10px;
+								font-size: 14px;
+								color: #65676b;
+								cursor: pointer;
+							}
+					
+							.post-actions div:hover {
+								color: #1877f2;
+							}
+						</style>
+					<div class="post-card">
+						<div class="post-header">
+							<img src="https://cdn.prod.website-files.com/62d84e447b4f9e7263d31e94/6399a4d27711a5ad2c9bf5cd_ben-sweet-2LowviVHZ-E-unsplash-1.jpeg" alt="Profile Picture" class="profile-photo">
+							<div class="user-info">
+								<h4>John Doe</h4>
+								<p>2 hrs ago · 🌍</p>
+							</div>
 						</div>
-							<!-- From Uiverse.io by alexruix --> 
+						<div class="post-content">
+							Had an amazing time at the beach today! 🌊🌞 #Vacation #Relaxing
+						</div>
+						<img src="https://cdn.prod.website-files.com/62d84e447b4f9e7263d31e94/6399a4d27711a5ad2c9bf5cd_ben-sweet-2LowviVHZ-E-unsplash-1.jpeg" alt="Post Image" class="post-image">
+						<div class="post-actions">
+							<div>👍 Like</div>
+							<div>💬 Comment</div>
+							<div>↪️ Share</div>
+						</div>
+					</div>
 
-  <div class="card">
-	<div class="card-img"></div>
-	<div class="card-info">
-	  <p class="text-title">Product title </p>
-	  <p class="text-body">Product description and details</p>
-	</div>
-	<div class="card-footer">
-	<span class="text-title">R499.49</span>
-	<div class="card-button">
-	  <svg class="svg-icon" viewBox="0 0 20 20">
-		<path d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"></path>
-		<path d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"></path>
-		<path d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"></path>
-	  </svg>
-	</div>
-  </div></div>
 
-  <div class="card">
-	<div class="card-img"></div>
-	<div class="card-info">
-	  <p class="text-title">Product title </p>
-	  <p class="text-body">Product description and details</p>
-	</div>
-	<div class="card-footer">
-	<span class="text-title">R499.49</span>
-	<div class="card-button">
-	  <svg class="svg-icon" viewBox="0 0 20 20">
-		<path d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"></path>
-		<path d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"></path>
-		<path d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"></path>
-	  </svg>
-	</div>
-  </div></div>
 
-  <div class="card">
-	<div class="card-img"></div>
-	<div class="card-info">
-	  <p class="text-title">Product title </p>
-	  <p class="text-body">Product description and details</p>
-	</div>
-	<div class="card-footer">
-	<span class="text-title">R499.49</span>
-	<div class="card-button">
-	  <svg class="svg-icon" viewBox="0 0 20 20">
-		<path d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"></path>
-		<path d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"></path>
-		<path d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"></path>
-	  </svg>
-	</div>
-  </div></div>
 
-  <div class="card">
-	<div class="card-img"></div>
-	<div class="card-info">
-	  <p class="text-title">Product title </p>
-	  <p class="text-body">Product description and details</p>
-	</div>
-	<div class="card-footer">
-	<span class="text-title">R499.49</span>
-	<div class="card-button">
-	  <svg class="svg-icon" viewBox="0 0 20 20">
-		<path d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"></path>
-		<path d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"></path>
-		<path d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"></path>
-	  </svg>
-	</div>
-  </div></div>
-  		  </div>
-</div>
+
+
+					<style>
+						.pic-post-card {
+							width: 400px;
+							background: white;
+							border-radius: 8px;
+							box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+							padding: 15px;
+							border: 1px  solid grey;
+						}
+				
+						.pic-post-header {
+							display: flex;
+							align-items: center;
+							gap: 10px;
+							margin-bottom: 10px;
+						}
+				
+						.pic-profile-photo {
+							width: 40px;
+							height: 40px;
+							border-radius: 50%;
+						}
+				
+						.pic-user-info {
+							display: flex;
+							flex-direction: column;
+						}
+				
+						.pic-user-info h4 {
+							margin: 0;
+							font-size: 16px;
+							font-weight: bold;
+						}
+				
+						.pic-user-info p {
+							margin: 0;
+							font-size: 12px;
+							color: gray;
+						}
+				
+						.pic-post-content {
+							font-size: 14px;
+							color: #333;
+							margin: 10px 0;
+						}
+				
+						.pic-image-grid {
+							display: grid;
+							gap: 5px;
+						}
+				
+						.pic-large-image {
+							width: 100%;
+							height: 200px;
+							object-fit: cover;
+							border-radius: 8px;
+						}
+				
+						.pic-small-images {
+							display: grid;
+							grid-template-columns: repeat(3, 1fr);
+							gap: 5px;
+							margin-top: 5px;
+						}
+				
+						.pic-small-image {
+							width: 100%;
+							height: 80px;
+							object-fit: cover;
+							border-radius: 6px;
+							position: relative;
+						}
+				
+						.pic-overlay {
+							position: absolute;
+							width: 100%;
+							height: 100%;
+							background: rgba(0, 0, 0, 0.5);
+							color: white;
+							font-size: 20px;
+							display: flex;
+							align-items: center;
+							justify-content: center;
+							border-radius: 6px;
+							font-weight: bold;
+						}
+				
+						.pic-post-actions {
+							display: flex;
+							justify-content: space-between;
+							margin-top: 10px;
+							font-size: 14px;
+							color: #65676b;
+							cursor: pointer;
+						}
+				
+						.pic-post-actions div:hover {
+							color: #1877f2;
+						}
+					</style>
+					<div class="pic-post-card">
+						<div class="pic-post-header">
+							<img src="https://source.unsplash.com/100x100/?portrait" alt="Profile Picture" class="pic-profile-photo">
+							<div class="pic-user-info">
+								<h4>John Doe</h4>
+								<p>2 hrs ago · 🌍</p>
+							</div>
+						</div>
+						<div class="pic-post-content">
+							What an incredible day exploring the city! 🚶‍♂️🏙️ #Adventure #CityLife
+						</div>
+						<div class="pic-image-grid">
+							<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2zRDS2xh1FMc2r4cg7rY6bQaZaw7BaF4Mzg&s" alt="Large Post Image" class="pic-large-image">
+							<div class="pic-small-images">
+								<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJxo2NFiYcR35GzCk5T3nxA7rGlSsXvIfJwg&s" alt="Small Image 1" class="pic-small-image">
+								<img src="https://cdn.prod.website-files.com/62d84e447b4f9e7263d31e94/6399a4d27711a5ad2c9bf5cd_ben-sweet-2LowviVHZ-E-unsplash-1.jpeg" alt="Small Image 2" class="pic-small-image">
+								<div class="pic-small-image" style="position: relative;">
+									<div class="pic-overlay">+1</div>
+								</div>
+							</div>
+						</div>
+						<div class="pic-post-actions">
+							<div>👍 Like</div>
+							<div>💬 Comment</div>
+							<div>↪️ Share</div>
+						</div>
+					</div>
+					</div>
+					
 				</div>
+				
 			</div>
 
 				 <div class="social-section" id="social">
@@ -378,54 +716,86 @@
 					<div class="lap-box-fixer">
 								
 					<div class="lap-box" style="padding-top: 30px;">
-						<h1>Proudly S.A</h1>
-						<h2>All about Brett Robson on Google</h2>
-						<br>
-						<p>We are a fashion forward company that caters for corporate, social bespoke and everyday wear.</p>
 					
-						<Button style="width: 120px;
-						height: 60px;
-						border-radius: 10px;
-						font-weight: bold;
-						font-size: 1.1em;
-						margin: 20px;
-						border: 1px solid #F3F3F3; background: #ECF0F3; box-shadow: 8px 8px 16px #c3c3c3, -5px -5px 5px #ffffff;">edit</Button>
+							<style>
+								.ca-contact-card {
+									width: 320px;
+									background: white;
+									border-radius: 12px;
+									box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+									text-align: center;
+									padding: 20px;
+								}
 						
-						<div class="card-div" >
-							<h4>hello world</h4>
-							<p>there will be things here</p>
-						</div>
-						<div class="card-div" >
-							<h4>hello world</h4>
-							<p>there will be things here</p>
-						</div>
-						<div class="card-div" >
-							<h4>hello world</h4>
-							<p>there will be things here</p>
-						</div>
-						<div class="card-div" >
-							<h4>hello world</h4>
-							<p>there will be things here</p>
-						</div>
-						<div class="card-div" >
-							<h4>hello world</h4>
-							<p>there will be things here</p>
-						</div>
-						<div class="card-div" >
-							<h4>hello world</h4>
-							<p>there will be things here</p>
-						</div>
-					
-						<p>We are a fashion forward company that caters for corporate, social bespoke and everyday wear.</p>
-					
-						<Button style="width: 120px;
-						height: 60px;
-						border-radius: 10px;
-						font-weight: bold;
-						font-size: 1.1em;
-						margin: 20px;
-						border: 1px solid #F3F3F3; background: #ECF0F3; box-shadow: 8px 8px 16px #c3c3c3, -5px -5px 5px #ffffff;">edit</Button>
+								.ca-profile-photo {
+									width: 80px;
+									height: 80px;
+									border-radius: 50%;
+									margin-bottom: 10px;
+								}
 						
+								.ca-contact-card h2 {
+									margin: 5px 0;
+									font-size: 20px;
+								}
+						
+								.ca-contact-card p {
+									color: gray;
+									font-size: 14px;
+									margin: 5px 0 15px;
+								}
+						
+								.ca-contact-buttons {
+									display: flex;
+									flex-direction: column;
+									gap: 10px;
+								}
+						
+								.ca-contact-buttons a {
+									display: flex;
+									align-items: center;
+									justify-content: center;
+									text-decoration: none;
+									font-size: 14px;
+									color: white;
+									padding: 10px;
+									border-radius: 8px;
+									font-weight: bold;
+								}
+						
+								.call { background: #28a745; } /* Green */
+								.email { background: #007bff; } /* Blue */
+								.whatsapp { background: #25D366; } /* WhatsApp Green */
+								.socials { background: #6c757d; } /* Gray */
+						
+								.ca-contact-buttons a img {
+									width: 18px;
+									margin-right: 10px;
+								}
+							</style>
+					
+							<div class="ca-contact-card">
+								<img src="https://source.unsplash.com/100x100/?face" alt="Profile Picture" class="ca-profile-photo">
+								<h2>John Doe</h2>
+								<p>Web Developer | Tech Enthusiast</p>
+						
+								<div class="ca-contact-buttons">
+									<a href="tel:+1234567890" class="call">
+										<img src="https://img.icons8.com/ios-filled/50/ffffff/phone.png"/> Call Now
+									</a>
+									<a href="mailto:johndoe@example.com" class="email">
+										<img src="https://img.icons8.com/ios-filled/50/ffffff/email.png"/> Send Email
+									</a>
+									<a href="https://wa.me/1234567890" class="whatsapp">
+										<img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png"/> Chat on WhatsApp
+									</a>
+									<a href="https://linkedin.com/in/johndoe" class="socials">
+										<img src="https://img.icons8.com/ios-filled/50/ffffff/linkedin.png"/> View LinkedIn
+									</a>
+								</div>
+							</div>
+						
+					
 					</div>
 
 				
@@ -441,3 +811,10 @@
 	<script src="script.js" type="text/javascript" charset="utf-8"></script>
 	
 </html>
+
+
+
+
+
+
+
